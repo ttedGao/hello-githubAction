@@ -21,7 +21,7 @@ jobs:
           echo test, and deploy your project.
           
       # - name: Remote Script Executor
-      # - uses: binozo/githubactionremotescriptexecutor150@v1.4
+      # - uses: Binozo/GitHubActionRemoteScriptExecutor@v1.4
       #   with:
       #     server-address: 192.200.150.63
       #     script-name: myscript.sh
