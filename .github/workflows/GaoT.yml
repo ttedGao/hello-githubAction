@@ -25,4 +25,4 @@ jobs:
         with:
           server-address: 192.200.150.63
           script-name: myscript.sh
-          password: ${{ secrets.server_password }}
+     #    password: ${{ secrets.server_password }}
