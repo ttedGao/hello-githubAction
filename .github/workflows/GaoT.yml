@@ -20,9 +20,9 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-      - name: Remote Script Executor
-      - uses: binozo/githubactionremotescriptexecutor150@v1.4
-        with:
-          server-address: 192.200.150.63
-          script-name: myscript.sh
-          password: ${{ secrets.server_password }}
+      # - name: Remote Script Executor
+      # - uses: binozo/githubactionremotescriptexecutor150@v1.4
+      #   with:
+      #     server-address: 192.200.150.63
+      #     script-name: myscript.sh
+      #     password: ${{ secrets.server_password }}
