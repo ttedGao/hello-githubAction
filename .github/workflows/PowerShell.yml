@@ -1,0 +1,17 @@
+name: Remote PowerShell Execution
+on: workflow_dispatch
+jobs:
+  remote_execution:
+    name: Remote Execution
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Remote Connection
+        uses: microsoft/winrm-ssh@v1.0.0
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USERNAME }}
+          ssh-key: ${{ secrets.REMOTE_SSH_KEY }}
+      - name: Execute PowerShell Command
+        run: |
+          Enter-PSSession -ComputerName ${{ secrets.REMOTE_HOST }} -UseSSL -Credential ${{ secrets.REMOTE_USERNAME }} -SessionOption (New-PSSessionOption -SkipCACheck) -Authentication Basic
+          Get-Process
