@@ -21,4 +21,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a script
         run: 
-          mkdir gao
+          Clear-content  testCaseNames.txt
+          Set-content  1.txt  -value  “display \n”
+          Set-content  1.txt  -value  “display1”
