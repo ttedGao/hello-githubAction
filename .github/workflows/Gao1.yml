@@ -21,6 +21,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a script
         run: 
-          Clear-content  testCaseNames.txt
-          Set-content  testCaseNames.txt  -value  “display \n”
-          Set-content  testCaseNames.txt  -value  “display1”
+          Set-content  testCaseNames.txt  -value  "display \\r\\n display1"
