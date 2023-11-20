@@ -1,4 +1,4 @@
-name: Gao1
+name: AutoTest
 
 # Controls when the workflow will run
 on: workflow_dispatch
